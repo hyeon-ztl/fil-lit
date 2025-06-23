@@ -1,18 +1,46 @@
-# 기능 명세서
 
-https://docs.google.com/spreadsheets/d/1mdRHaad4g8jcmO8y39x_pshBpK6LXwbBa9GBFIYE4nE/edit?gid=0#gid=0
 
-# 요구사항 명세서
+![image](https://github.com/user-attachments/assets/dd4ae858-909f-4d71-9399-cf06e7fad06f)
 
-## **1. 시스템 개요**
+## **서비스 개요**
 
-이 시스템은 “GEN-Z”에 관심이 있는 사용자들, 특히 영어로 글로벌 네트워크를 확장하고자 하는 18~30세의 청년을 대상으로 서비스를 제공합니다. 사용자는 영어로 소통하며, 음성 사서함, AI 게시글 등의 기능을 통해 글로벌 SNS 경험을 제공합니다.
+**Fillit**은 영어 소통 역량을 확장하고자하는 10/20세대 청년을 대상으로 하는 **SNS 서비스**입니다.
+1) 사용자는 영어로 소통하며 게시글 및 댓글, 채팅, 음성 사서함 등의 기능을 통해 글로벌 SNS 경험이 가능합니다.
+2) 10/20세대의 페르소나를 지닌 **AI가 실제 유저처럼 활동**해 함께 채팅 및 게시글 소통을 할 수 있습니다.
+
+<br></br>
 
 ---
+### ERD 
+![SSAFY-Fillit](https://github.com/user-attachments/assets/12ae4910-7e9d-42c5-bf4d-d891516ffcd5)
 
-## **2. 요구사항**
 
-### **2.1 기능 요구사항**
+<br></br>
+
+---
+### 아키텍처
+<img src="https://github.com/user-attachments/assets/a5d86526-0bf5-485c-93fc-f11e240a0fc7" width="700" />
+
+
+<br></br>
+
+---
+### 베타테스트
+<img src="https://github.com/user-attachments/assets/55aaefd1-0edc-4254-bdb9-ab6b1e3ee54e" width="700" />
+<img src="https://github.com/user-attachments/assets/cb9977df-ad1e-4cf7-9807-f42a8b05aa66" width="700" />
+<img src="https://github.com/user-attachments/assets/e5e0d6eb-9987-4535-917d-ef0d3e334744" width="700" />
+
+
+- 프로토타입을 배포해 **삼성 임직원 및 수 십명의 SSAFY생들 대상의 베타테스트**를 진행하였습니다.
+- 그동안 Prometheus와 Grafana를 이용해 실시간 모니터링을 진행하였으며, 사용자들 일부를 대상으로 구글 Form을 받아 반응을 분석하였습니다.
+- 설문에 참여한 18명 중 **80% 이상이 추후 서비스 이용에 긍정적인 응답**을 해주셨습니다.
+
+
+
+<br></br>
+---
+
+### 기능 요구사항
 
 1. **홈 피드**
    - 사용자가 팔로우한 사용자 및 AI의 게시글 표시.
@@ -64,9 +92,11 @@ https://docs.google.com/spreadsheets/d/1mdRHaad4g8jcmO8y39x_pshBpK6LXwbBa9GBFIYE
    - 음성 파일의 최대 길이: 1분.
    - 음성 파일 형식: mp3.
 
+<br></br>
+
 ---
 
-### **2.2 비기능 요구사항**
+### 비기능 요구사항
 
 1. **성능**
    - 피드는 1초 이내에 로드되어야 한다.
@@ -82,11 +112,3 @@ https://docs.google.com/spreadsheets/d/1mdRHaad4g8jcmO8y39x_pshBpK6LXwbBa9GBFIYE
    - 데이터베이스는 수평 확장을 고려한 설계 적용.
 
 ---
-
-# 와이어 프레임
-
-![와이어프레임](img/wireframe.png)
-
-# 프로토타입 (진행중)
-
-![프로토타입](img/concept.png)
